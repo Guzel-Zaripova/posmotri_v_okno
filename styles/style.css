@@ -83,8 +83,8 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
+  inline-size: 15px;
+  block-size: 15px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -134,7 +134,7 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   background-color: #fff;
   inline-size: 15px;
   aspect-ratio: 1 / 1;
