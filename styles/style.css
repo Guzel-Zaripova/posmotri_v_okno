@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  place-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -42,7 +44,7 @@ ol {
   justify-content: center;
   align-items: end;
   column-gap: 30px;
-  margin: 133px 30px;
+  margin: 0 auto;
 }
 
 .result__video-container {
@@ -53,7 +55,6 @@ ol {
 }
 
 .result__video {
-  position: absolute;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
