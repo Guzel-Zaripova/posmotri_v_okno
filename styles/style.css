@@ -79,6 +79,7 @@ ol {
 .search-form__label {
   display: flex;
   width: fit-content;
+  position: relative;
 }
 
 .visually-hidden {
@@ -134,7 +135,7 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   background-color: #fff;
   inline-size: 15px;
   aspect-ratio: 1 / 1;
