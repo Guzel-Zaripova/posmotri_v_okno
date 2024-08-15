@@ -79,7 +79,6 @@ ol {
 .search-form__label {
   display: flex;
   width: fit-content;
-  position: relative;
 }
 
 .visually-hidden {
@@ -125,7 +124,6 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
   display: inline-block;
   block-size: 19px;
   aspect-ratio: 1 / 1;
@@ -133,14 +131,10 @@ ol {
   margin-right: 5px;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: "";
-  position: absolute;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-color: #fff;
-  inline-size: 15px;
-  aspect-ratio: 1 / 1;
-  transform: translate(-50%, -50%);
-  inset: 50%;
+  outline: 1px solid #1b1919;
+  outline-offset: -2px;
 }
 
 .search-form__label:has(.search-form__checkbox):hover {
@@ -266,6 +260,8 @@ button:focus {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .more-button {
