@@ -40,8 +40,8 @@ ol {
 }
 
 .content {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 711px 1fr;
   align-items: end;
   column-gap: 30px;
   inline-size: 1140px;
